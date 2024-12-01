@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Form Container Styling */
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        /* Label Styling */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        /* Input Field Styling */
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        /* Submit Button Styling */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Add some spacing for better visuals */
+        input[type="submit"]:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="pas">Password</label>
+        <input type="password" name="pass" id="pas" required>
+
+        <input type="submit" onclick="foo()" value="Submit">
+    </form>
+
+    <script>
+        function foo() {
+            console.log("Hello Guvi !!!!!.....");
+        }
+    </script>
+</body>
+</html>
